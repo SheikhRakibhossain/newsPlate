@@ -15,6 +15,10 @@ module.exports = {
     'react-refresh/only-export-components': [
       'warn',
       { allowConstantExport: true },
+      "rules", {
+        "react/prop-types": "off"
+      }
     ],
   },
 }
+/* eslint-disable react/prop-types */ // TODO: upgrade to latest eslint tooling

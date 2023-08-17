@@ -2,10 +2,10 @@
 const News = (props) => {
     const { title,details,thumbnail_url, total_view} = props.news;
     console.log(props.news);
-    
+
     return (
-        <div className="card w-96 bg-base-100 shadow-xl">
-            <figure><img src={thumbnail_url} alt="Shoes" /></figure>
+        <div className="card w-full ">
+            <figure><img src={thumbnail_url} className="image-fluid" alt="news_image" /></figure>
             <div className="card-body">
                 <h2 className="card-title">{title}</h2>
                 <p>{details}</p>

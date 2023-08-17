@@ -1,8 +1,9 @@
+import Newses from "../News/Newses";
 
 const Home = () => {
     return (
         <div>
-            <h2>I am Home page</h2>
+            <Newses />
         </div>
     );
 };
