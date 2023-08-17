@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .socialIcon{
+    @apply   w-8 h-8 grid justify-center content-center align-items-center border-2 border-gray-400 rounded-full  text-gray-600 hover:text-white hover:bg-blue-600 hover:border-blue-600
+} */
