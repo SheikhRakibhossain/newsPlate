@@ -79,7 +79,7 @@ const Footer = () => {
             <div className="px-4 mt-4 sm:w-1/3 xl:w-1/6 sm:mx-auto xl:mt-0 xl:ml-auto">
               <h5 className="text-xl font-bold mb-6 sm:text-center xl:text-left">Stay connected</h5>
               <div className="flex sm:justify-center xl:justify-start gap-1">
-                <a href="" className="socialIcon">
+                <a href="" className="w-8 h-8 grid justify-center content-center align-items-center border-2 border-gray-400 rounded-full  text-gray-600 hover:text-white hover:bg-blue-600 hover:border-blue-600">
                 <FaFacebook/>
                 </a>
                 <a href="" className="w-8 h-8 grid justify-center content-center align-items-center border-2 border-gray-400 rounded-full  text-gray-600 hover:text-white hover:bg-blue-600 hover:border-blue-600">

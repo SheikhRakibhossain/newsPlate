@@ -1,19 +1,15 @@
 import { Outlet } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
 
 const Main = () => {
     return (
         <>
-        
-        <Header></Header>
-        <Outlet></Outlet>
-        <Footer></Footer>
-        
-        
-        
-        
-        
+        <Header/>
+        <Navbar/>
+        <Outlet/>
+        <Footer/>
         </>
     );
 };
