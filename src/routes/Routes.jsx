@@ -4,7 +4,9 @@ import Home from "../pages/Home/Home";
 import Signup from "../pages/Signup/Signup";
 import Login from "../pages/Login/Login";
 import News from "../pages/News/Newses";
-import Categories from "../components/categories/Categories";
+import Category from "../pages/Category/Category";
+import SingleNews from "../pages/SingleNews/SingleNews";
+import NewsDetails from "../NewsDetails/NewsDetails";
 
 const router = createBrowserRouter([
   {
@@ -24,17 +26,30 @@ const router = createBrowserRouter([
         path:'/login',
         element:<Login/>
       },
+     
       {
-        path:'/category',
-        element:<Categories/>
+        path:'/category/:id',
+        element:<Category/>
       },
       {
         path:'/news',
         element:<News/>
-      }
+      },
 
 
-    ]}
+
+    ]},
+    {
+      path:'news',
+      element:<SingleNews/>,
+      children:[
+
+       {
+        path:'/:id',
+        element:<NewsDetails/>
+       }
+      ]
+    }
   
 ]);
 
