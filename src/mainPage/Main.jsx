@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Categories from "../components/categories/Categories";
+import RightSidebar from "../components/RightSidebar/RightSidebar";
 
 const Main = () => {
     return (
@@ -19,7 +20,7 @@ const Main = () => {
                 <div className=" col-span-6"> <Outlet /> </div>
 
                 {/* Right side bar here */}
-                <div className="col-span-3"> <h2 className="text-xl font-bold">Left nav bar</h2></div>
+                <RightSidebar/>
 
             </div>
 
