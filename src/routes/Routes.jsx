@@ -7,6 +7,7 @@ import News from "../pages/News/Newses";
 import Category from "../pages/Category/Category";
 import SingleNews from "../pages/SingleNews/SingleNews";
 import NewsDetails from "../NewsDetails/NewsDetails";
+import Practice from "../pages/practice/Practice";
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
         path:'/news',
         element:<News/>
       },
+      {
+        path:'/practice',
+        element:<Practice/>
+      }
 
 
 
