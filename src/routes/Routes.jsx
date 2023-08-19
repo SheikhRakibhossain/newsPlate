@@ -9,6 +9,7 @@ import SingleNews from "../pages/SingleNews/SingleNews";
 import NewsDetails from "../NewsDetails/NewsDetails";
 import Practice from "../pages/practice/Practice";
 
+// here i have added 2 types of routing direction for link
 const router = createBrowserRouter([
   {
     path: "/",
