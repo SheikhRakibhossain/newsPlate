@@ -6,6 +6,7 @@ const Navbar = () => {
         <li><Link to={'/signin'}>Item 1</Link></li>
         <li><Link to={'/signup'}>Item 1</Link></li>
         <li><Link to={'/categories'}>Categories</Link></li>
+        <li><Link to={'/practice'}>practice</Link></li>
 
 
     </>
