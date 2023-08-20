@@ -30,6 +30,14 @@ const Practice = () => {
         setList([...list])
     }
 
+    const removeItem = (index) => {
+
+        list.splice(index, 1)
+        setList([...list])
+        console.log(index)
+
+    }
+
 
     return (
         <div>
@@ -42,6 +50,9 @@ const Practice = () => {
             {/* list and item add with using useState */}
             <div className='py-8 border-spacing-1'>
 
+                <input onChange={(e) => { setItem(e.target.value) }} className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' type="text" placeholder='Write the number or text' />
+                <input onClick={addToList} type="submit" value="Add Item" className='btn btn-danger' />
+                <p>{list.length}</p>
                 <table className='table-fixed'>
 
                     <tbody>
@@ -52,7 +63,7 @@ const Practice = () => {
                                     return (
                                         <tr className='block border-2 bottom-3'>
                                             <td>{element}</td>
-                                            <td><button className='btn btn-success'>Remove Item</button></td>
+                                            <td><button onClick={() => removeItem(index)} className='btn btn-success'>Remove Item</button></td>
                                         </tr>
                                     )
 
@@ -65,9 +76,7 @@ const Practice = () => {
 
                 </table>
 
-                <input onChange={(e) => { setItem(e.target.value) }} className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' type="text" placeholder='Write the number or text' />
-                <input onClick={addToList} type="submit" value="Add Item" className='btn btn-danger' />
-                <p>{list.length}</p>
+
             </div>
         </div>
     );
