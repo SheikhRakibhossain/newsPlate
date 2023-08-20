@@ -107,7 +107,7 @@ const Practice = () => {
                     fruits.map( (element, index) =>{
                         return(
                             <div key={index}>
-                                <p className='flex justify-between py-3'><span className='text-xl font-mono font-bold'>{element} </span><button onClick={()=>{deleteFruits(index)}} className='btn btn-warning '>Remove</button></p>
+                                <p className='flex justify-between py-3'><span className='text-xl font-mono font-bold'>{element} </span><button onClick={()=>{deleteFruits(index)}} className='btn btn-warning border-none'>Remove</button></p>
                                 
                             </div>
                         )
